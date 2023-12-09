@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/telaRecSenha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#F8F7F7"
+    tools:context=".recuperarSenha">
+
+    <Button
+        android:id="@+id/btContRecSenha"
+        android:layout_width="115dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="90dp"
+        android:onClick="alterarSenha"
+        android:text="Confirmar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btVoltarEsqSenha" />
+
+    <Button
+        android:id="@+id/btCancelRecSenha"
+        android:layout_width="115dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="90dp"
+        android:onClick="Cancela"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btContEsqSenha"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="207dp"
+        android:text="Insira uma nova senha"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Recuperação de Senha"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/novaSenha"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:hint="Nova senha"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="260dp"
+        android:text="Repetir senha"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novaSenha" />
+
+    <EditText
+        android:id="@+id/repetSenha"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="136dp"
+        android:ems="10"
+        android:hint="Repita a senha"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="352dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="60dp"
+        android:text="Sua senha deve conter pelo menos 8 carácteres, incluindo um especial, um número, uma letra maiúscula e minuscúlas."
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repetSenha" />
+
+    <TextView
+        android:id="@+id/lbRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

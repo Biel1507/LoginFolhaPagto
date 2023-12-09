@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/telaEsqSenha"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#F8F7F7"
+    tools:context=".esqueceuSenha">
+
+    <ImageView
+        android:id="@+id/imgEsqSenha"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/payroll" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="136dp"
+        android:text="Recuperação de conta"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgEsqSenha" />
+
+    <TextView
+        android:id="@+id/emailEsqSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="177dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btVoltarEsqSenha"
+        android:layout_width="115dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="108dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btContEsqSenha"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btContEsqSenha"
+        android:layout_width="115dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="108dp"
+        android:onClick="confirma"
+        android:text="Confirmar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btVoltarEsqSenha" />
+
+    <EditText
+        android:id="@+id/codigoEsqSenha"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Código"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/reenvCodEsqSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reenvCodEsqSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="48dp"
+        android:text="Reenviar Código"
+        app:layout_constraintBottom_toTopOf="@+id/btVoltarEsqSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

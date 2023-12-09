@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/telaLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#F8F7F7"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/esqueceuLogin"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Esqueceu a senha?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senhaLogin" />
+
+    <EditText
+        android:id="@+id/senhaLogin"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLogin" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/senhaLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btLogar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="162dp"
+        android:onClick="login"
+        android:text="Entrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esqueceuLogin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/payroll" />
+
+    <TextView
+        android:id="@+id/lbResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogin"
+        app:layout_constraintVertical_bias="0.242" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
